@@ -6,7 +6,7 @@
 
 > AREA is a third year Epitech web/mobile project, that allows you to automate certain actions (triggers) and reactions within multiple services (i.e Spotify, Discord, Trello, etc).
 
-> If you are interested by the technical documentation click <a href="https://github.com/EpitechIT2020/B-YEP-500-PAR-5-1-area-francois.ching/wiki">here</a>.
+> If you are interested by the technical documentation click <a href="https://github.com/cccAlex/AREA_2021/wiki">here</a>.
 
 ## Show your support
 
