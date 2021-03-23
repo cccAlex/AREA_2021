@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  client_web:
+    container_name: client_web
+    build: ./client_web
+    ports:
+      - 8081:8081
+    restart: unless-stopped
+    depends_on:
+      - server
+      - client_mobile
+    links:
+      - server
+      - client_mobile
+    volumes:
+      - client:/var/client
+
+  client_mobile:
+    container_name: client_mobile
+    build: ./client_mobile
+    restart: unless-stopped
+    depends_on:
+      - server
+    links:
+      - server
+    volumes:
+      - client:/var/client
+
+  server:
+    container_name: server
+    build: ./server
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+
+volumes:
+  client:

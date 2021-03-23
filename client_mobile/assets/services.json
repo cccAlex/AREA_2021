@@ -1,0 +1,91 @@
+{
+    "service":{
+       "Discord":{
+          "action":{
+             
+          },
+          "reaction":{
+             "discordSendMessage": [
+                
+             ]
+          }
+       },
+       "Spotify":{
+          "action":{
+             "spotifyLikeSong": [
+               
+             ]
+          },
+          "reaction":{
+             "spotifyAddToPlaylist": [
+                "playlistID"
+             ]
+         }
+       },
+       "Youtube":{
+          "action":{
+             "youtubeGetNewestVideo":[
+               "channelURL"
+            ],
+             "youtubeGetSubscribersCount":[
+                "subscriber_goal"
+             ],
+             "youtubeGetTotalViewsCount":[
+               "views_goal"
+            ],
+            "youtubeGetNewestVideoFromPlaylist": [
+               "playlistID"
+            ]
+          },
+          "reaction":{
+            "youtubeLikeVideo": [
+            ],
+            "youtubeDislikeVideo": [
+            ]
+          }
+       },
+      "Google Drive":{
+         "action":{
+            "getNewFile":[
+            ]
+         },
+         "reaction":{
+            "createFileDrive": [
+
+            ]
+         }
+      },
+      "Google Calendar":{
+         "action":{
+            "GoogleCalendarUpdateEvents":[
+            ],
+            "GoogleCalendarRemoveEvents": [
+
+            ] 
+         },
+         "reaction":{
+            "GoogleCalendarAddEvent": [
+            ]
+         }
+      },
+      "Weather":{
+         "action":{
+            "checkCurrentWeather":[
+              "city"
+           ]
+         },
+         "reaction":{
+            
+         }
+      },
+      "Area Mailer":{
+         "action":{
+         },
+         "reaction":{
+            "areaBotMailer":[
+
+            ]
+         }
+      }
+    }
+ }
